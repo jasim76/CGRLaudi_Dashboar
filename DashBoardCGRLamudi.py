@@ -9,7 +9,7 @@ st.set_page_config(layout='wide')
 st.title('MENGHITUNG HARGA BANGUNAN DAN LAHAN PERUMAHAN DI DEPOK')
 
 # BAGIAN CGR
-df = pd.read_csv('perum_cgr_fix_2.csv')
+df = pd.read_csv('https://drive.google.com/file/d/1fqTwXZOpdZQhMK_G_Q88nH4QnhPdNF6G/view?usp=drive_link')
 
 def format_big_number(num):
     if num >= 1e9:
@@ -80,7 +80,7 @@ st.altair_chart(barchart)
 
 # BAGIAN LAMUDI
 st.header("Data lamudi.com")
-df2 = pd.read_csv('lamudi_pentaho_transform_fix.csv')
+df2 = pd.read_csv('https://drive.google.com/file/d/1FazS14daJFosx-qIX6MJxx15H2XhSsgS/view?usp=drive_link')
 
 def hld(kec):
     hl_lamudi_2 = (df2[df2['alamat']==kec]['harga'].sum() - df2[df2['alamat']==kec]['luas_bangunan'].sum() * 4921226.098787341) / df2[df2['alamat']==kec]['luas_lahan'].sum()
