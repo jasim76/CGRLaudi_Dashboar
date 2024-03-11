@@ -4,3 +4,4 @@ altair
 numpy
 pandas
 scikit-learn
+matplotlib
