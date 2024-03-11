@@ -109,13 +109,13 @@ if (selected == "Home") :
     st.text("Disclaimer : Data ini digunakan untuk model pembelajaran Data Analysis")
     st.text('untuk Data collection, integration dan cleansing menggunakan Octoparse dan Pentaho serta di explore dengan SQL sebagai berikut :') 
 
-    g1, g2, g3 = st.columns([1,5,2])
-    with g1:
-        st.write(" ")
-    with g3:
-        st.write(" ")
-    with g2:
-        st.image("Data_Cleansing.png", width=800)
+    # g1, g2, g3 = st.columns([1,5,2])
+    # with g1:
+    #     st.write(" ")
+    # with g3:
+    #     st.write(" ")
+    # with g2:
+    #     st.image("Data_Cleansing.png", width=800)
 
     formula_SQL ='''
     WITH fix_lamudi AS (
@@ -205,17 +205,17 @@ if (selected == "Prediction") :
         else:
             st.warning("Prediction could not be made.")
 
-if (selected == "Gallery") :
-    tab1, tab2, tab3, tab4 = st.tabs(['Rumah1', 'Rumah2', 'Rumah3','Rumah4'])
-    with tab1 :
-        st.header("Brosur")
-        st.image("cgr3.PNG")
-    with tab2 :
-        st.header("Tahap Pengerjaan")
-        st.image("cgr6.PNG")
-    with tab3 :
-        st.header("Rumah Contoh")
-        st.image("cgr2.PNG")
-    with tab4 :
-        st.header("Rumah Contoh")
-        st.image("cgr1.PNG")
+# if (selected == "Gallery") :
+#     tab1, tab2, tab3, tab4 = st.tabs(['Rumah1', 'Rumah2', 'Rumah3','Rumah4'])
+#     with tab1 :
+#         st.header("Brosur")
+#         st.image("cgr3.PNG")
+#     with tab2 :
+#         st.header("Tahap Pengerjaan")
+#         st.image("cgr6.PNG")
+#     with tab3 :
+#         st.header("Rumah Contoh")
+#         st.image("cgr2.PNG")
+#     with tab4 :
+#         st.header("Rumah Contoh")
+#         st.image("cgr1.PNG")
