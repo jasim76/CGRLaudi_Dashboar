@@ -149,7 +149,7 @@ if (selected == "Home") :
     chart_lamudi 
     
     st.header("III. Insight Analysis")
-    st.markdown('<div style="text-align:justify">1. Dari data terlihat bahwa membeli atau berinvestasi rumah didepok sangat menjanjikan <br>2. Tren kenaikan lahan Linier <br>3. Harga jual tinggi</div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align:justify">1. Dari data menunjukan bahwa kenaikan harga lahan dalam periode 15 tahun adalah 118.94%, Tren kenaikan harga lahan Linier terhadap waktu yaitu semakin lama semakin mahal, dengan demikian harga jual rumah kembali semakin tinggi <br>2. Harga diatas adalah salah satu alasan mengapa  Perumahan di Depok Cocok untuk Investasi</div>', unsafe_allow_html=True)
 
 if (selected == "Prediction") :
     df2 = pd.read_csv('lamudi_pentaho_transform_fix.csv', usecols=['harga','luas_bangunan', 'luas_lahan'])
